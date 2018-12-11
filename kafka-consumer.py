@@ -2,9 +2,10 @@ from kafka import KafkaConsumer
 from github import Github
 
 #Must pip install pygithub first
+#Removed username and password from this script as of 12/11/18
 
-user = "team-pidgeot"
-password = "3r07W7R940yVAPRm5VL6"
+user = ""
+password = ""
 g = Github(user,password)
 
 consumer = KafkaConsumer('test', bootstrap_servers='34.217.221.173:9092', auto_offset_reset='latest')
